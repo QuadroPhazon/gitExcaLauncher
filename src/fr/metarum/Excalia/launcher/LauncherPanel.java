@@ -43,7 +43,7 @@ public class LauncherPanel extends JPanel implements SwingerEventListener{
 	
 	
 	private SColoredBar progressBar = new SColoredBar(Swinger.getTransparentWhite(100), new Color(0,255,0,175));
-	private JLabel infoLabel = new JLabel("Clique sur OK !", SwingConstants.CENTER);
+	//private JLabel infoLabel = new JLabel("Clique sur OK !", SwingConstants.CENTER);
 	
 	public LauncherPanel(){
 		this.setLayout(null);
@@ -95,10 +95,10 @@ public class LauncherPanel extends JPanel implements SwingerEventListener{
 		progressBar.setBounds(33, 603, 850, 13);
 		this.add(progressBar);
 		
-		infoLabel.setForeground(Color.BLUE);
+		/*infoLabel.setForeground(Color.BLUE);
 		infoLabel.setFont(usernameField.getFont());
 		infoLabel.setBounds(33, 573, 850, 18);
-		this.add(infoLabel);
+		this.add(infoLabel);*/
 		
 	} //END LAUNCHERPANEL
 	
@@ -165,8 +165,8 @@ public class LauncherPanel extends JPanel implements SwingerEventListener{
 		return progressBar;
 	}
 	
-	public void setInfoText(String text){
+	/*public void setInfoText(String text){
 		infoLabel.setText(text);
-	}
+	}*/
 	
 }//END LAUNCHERPANEL

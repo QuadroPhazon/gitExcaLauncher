@@ -32,7 +32,7 @@ public class Launcher {
 	
 	public static void update() throws Exception
 	{
-		SUpdate su = new SUpdate("");
+		//SUpdate su = new SUpdate("http://forum-excalia.forumactif.org/", );
 	}
 	
 }
