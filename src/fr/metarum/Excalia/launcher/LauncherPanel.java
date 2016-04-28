@@ -127,6 +127,14 @@ public class LauncherPanel extends JPanel implements SwingerEventListener{
 						return;
 					}
 					
+					try {
+						Launcher.update();
+					} catch (Exception e) {
+						Launcher.interruptThread();
+						JOptionPane.showMessageDialog(LauncherPanel.this, "Erreur, impossible de mettre le jeu a jour : " + e, "Erreur", JOptionPane.ERROR_MESSAGE);
+						setFieldsEnabled(true);
+						return;
+					}
 				}
 			};
 			t.start();
